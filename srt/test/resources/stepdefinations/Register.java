@@ -20,10 +20,13 @@ public class Register {
 	public void user_needs_to_click_on_register_button() {
 	    driver.findElement(By.xpath("//a[text()='Register']")).click();
 	}
-
+	@When("User enters username {string}")
+	public void user_enters_username(String string) {
+		 driver.findElement(By.xpath("//input[@id='customer.firstName']")).sendKeys(string);
+	}
 	@When("User needs to fill all the mandatory fields to register")
 	public void user_needs_to_fill_all_the_mandatory_fields_to_register() {
-	 driver.findElement(By.xpath("//input[@id='customer.firstName']")).sendKeys("Leela");
+	
 	 driver.findElement(By.xpath("//input[@id='customer.lastName']")).sendKeys("Moni");
 
 	 driver.findElement(By.xpath("//input[@id='customer.address.street']")).sendKeys("Hyd");
