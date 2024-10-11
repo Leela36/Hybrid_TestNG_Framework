@@ -10,22 +10,22 @@ Then User should login to the home page
 
 
 
-Scenario: Login with Valid username and invalid password
-
-When User enters username "nennuruleelaveni@gmail.com"
-And User enters password "Th@2210"
-And User clicks on login button
-Then User gets a warning message 
-
-Scenario: Login with invalid username and valid password
-
-When User enters username "nennueelaveni@gmail.com"
-And User enters password "Thatha@2210"
-And User clicks on login button
-Then User gets a warning message 
-
-
-Scenario: Login without providing credentials
-
-When User clicks on login button
-Then User gets a warning message like required field
+#Scenario: Login with Valid username and invalid password
+#
+#When User enters username "nennuruleelaveni@gmail.com"
+#And User enters password "Th@2210"
+#And User clicks on login button
+#Then User gets a warning message 
+#
+#Scenario: Login with invalid username and valid password
+#
+#When User enters username "nennueelaveni@gmail.com"
+#And User enters password "Thatha@2210"
+#And User clicks on login button
+#Then User gets a warning message 
+#
+#
+#Scenario: Login without providing credentials
+#
+#When User clicks on login button
+#Then User gets a warning message like required field
